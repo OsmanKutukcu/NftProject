@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 60px;
+  background-color: #18191c;
+  font-family: "Poppins", sans-serif;
+  color: #eaeaea;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #18191c;
+  color: white;
+  height: 10%;
+  width: 100%;
+  margin-top: 50px;
+}
+header h1 {
+  font-family: Unbounded;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  margin: 80px 0;
+}
+.hero .left h1 {
+  color: white;
+  font-size: 70px;
+}
+nav a {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+nav a:hover {
+  color: rgb(244, 18, 240);
+  text-shadow: 2px 2px 30px rgb(244, 18, 240);
+  transition: all 0.4s;
+}
+
+/* iletişime geç ve menu button*/
+header button {
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 60px;
+  color: #eaeaea;
+  background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+}
+
+.hero .left {
+  max-width: 700px;
+}
+.left-info {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.left-info p {
+  max-width: 400px;
+  font-size: 18px;
+  max-height: 120px;
+}
+
+.left-info div {
+  background: linear-gradient(120deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  width: 120px;
+  height: 120px;
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left-info div:hover {
+  background: linear-gradient(300deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  transition: all 0.5; /*  çalışmadı */
+}
+
+.hero .left h1 span {
+  color: #21d4fd;
+}
+
+.hero .right {
+  max-width: 700px;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+.nav-button {
+  display: none;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 100px 0;
+  flex-wrap: wrap;
+}
+
+/* -----------DROPLAR ------------*/
+
+.drops-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.drops-sec h1 {
+  font-size: 45px;
+  font-family: "Inter";
+}
+
+.categories {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.categories li {
+  list-style-type: none;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.categories li:hover {
+  background-image: linear-gradient(120deg, #21d4fd 0%, #b721ff 100%);
+}
+
+.categories li:last-child {
+}
+
+/* .  KARTLAR  */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px gray;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.card-img {
+  width: 100%;
+}
+
+.card-info .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-info .price img {
+  width: 25px;
+}
+
+.card-info .price p {
+  color: #b721ff;
+  font-weight: bold;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.card-footer p {
+  background-color: rgb(208, 208, 208);
+  color: #8400c1;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.card-footer button {
+  border: none;
+  background-color: white;
+  font-family: "Poppins";
+  color: blue;
+  cursor: pointer;
+}
+
+/* reklam    */
+.ad {
+  background-color: #21d4fd;
+  margin: 100px -120px;
+  font-size: 8vw;
+  font-weight: 600;
+  text-align: center;
+  transform: rotate(-6deg);
+  letter-spacing: 3vw;
+  text-shadow: 2px 2px 20px white;
+  white-space: nowrap;
+  cursor: pointer o;
+  overflow: hidden;
+}
+
+/*     BİLGİ KUTULARI      */
+
+.info-sec {
+  margin: 200px 0;
+}
+
+.info-sec h1 {
+  /*  NFT'ni Oluştur */
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.info-card {
+  background-color: #3e1054;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.info-card h2 {
+  margin-bottom: 10px;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+/*  ------     media ---------         */
+/* MOBİL UYUMLU(responsive) YAPMA */
+/* 800px den küçük cihazlar */
+@media (max-width: 900px) {
+  .contact-button {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  .left-info div {
+    padding: 0 30px;
+  }
+}
+
+/* 1300px tden büyük cihazlar */
+@media (min-width: 1300px) {
+  .hero .left {
+    max-width: 900px;
+  }
+  .left-info p {
+    max-width: 600px;
+  }
+}
+
+/* 1500px tden küçük cihazlar */
+@media (max-width: 1500px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .left {
+    max-width: 900px;
+  }
+  .hero .right {
+    order: -1;
+  }
+}
